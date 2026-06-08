@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:android="http://schemas.android.com/apk/res/android" xsi:noNamespaceSchemaLocation="layout.xsd"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                  android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_height="wrap_content" android:orientation="horizontal"
+                      android:layout_width="match_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本:1.0"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:orientation="horizontal"
+                      android:layout_width="match_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="模拟器编号: "/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:tag="ui_sid"
+                      android:hint=""/>
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:orientation="horizontal"
+                      android:layout_width="match_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电脑编号(云手机填分组): "/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:tag="pcid"
+                      android:hint=""/>
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:orientation="horizontal"
+                      android:layout_width="match_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册码: "/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:tag="token"
+                      android:hint="" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content" android:orientation="horizontal"
+                      android:layout_width="match_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_gravity="center" android:text="附加参数: "/>
+            <LinearLayout android:layout_height="wrap_content" android:orientation="vertical"
+                          android:layout_width="match_parent">
+
+                <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:tag="test_click"
+                          android:text="测试选项(请勿勾选)"/>
+
+                <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:tag="mumu_mode"
+                          android:text="mumu模拟器"/>
+                <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:tag="yunji_mode"
+                          android:text="云手机"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="horizontal">
+            <Button android:text="保存参数" android:layout_weight="1" android:tag="saveAllBtn"
+                    android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
