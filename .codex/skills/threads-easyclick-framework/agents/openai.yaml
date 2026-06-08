@@ -1,0 +1,4 @@
+interface:
+  display_name: "Threads EasyClick 框架"
+  short_description: "Threads EasyClick 项目开发约定指南"
+  default_prompt: "使用 $threads-easyclick-framework 按本项目框架约定开发 Threads EasyClick 任务。"
